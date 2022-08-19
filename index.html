@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <title>database</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="menu">
+            <div id="age" class="app">
+                <p>Filter <span style="color: orangered;">age</span></p> 
+                <div class='range-slider'>
+                    <input type="number" id="minNumAge" value="10">
+                    <input type="number" id="maxNumAge" value="90">
+                    <input type="range" min="0" max="99" step="1" value="10"  id="minRanAge">
+                    <input type="range" min="0" max="99" step="1" value="90"  id="maxRanAge">
+
+                <button id="applyAgeBtn">Apply</button>
+                </div>
+              </div>
+
+              <div id="weight" class="app">
+                <p>Filter <span style="color: orangered;">weight</span></p> 
+                <div class='range-slider'>
+                    <input type="number" id="minNumWeight" value="50" >
+                    <input type="number" id="maxNumWeight" value="120">
+                    <input type="range" min="1" max="250" step="1" value="50"  id="minRanWeight">
+                    <input type="range" min="1" max="250" step="1" value="120"  id="maxRanWeight">
+
+                <button id="applyWeightBtn">Apply</button>
+                </div>
+              </div>
+
+              <div id="length" class="app">
+                <p>Filter <span style="color: orangered;">length</span></p> 
+                <div class='range-slider'>
+                    <input type="number" id="minNumLength" value="90">
+                    <input type="number" id="maxNumLength" value="250">
+                    <input type="range" min="0" max="250" step="1" value="90"  id="minRanLength">
+                    <input type="range" min="0" max="250" step="1" value="250"  id="maxRanLength">
+
+                <button id="applyLengthBtn">Apply</button>
+                </div>
+              </div>
+
+              
+          
+        </div>
+        
+        <div class="database">
+            <header>
+                <p class="li"> Id</p>
+                <p class="li p">user-names</p>
+                <p class="li">age</p>
+                <p class="li">weight(kg)</p>
+                <p class="li">length(cm)</p>
+            </header>
+            <div class="userContainer"></div>
+        </div>
+        
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
